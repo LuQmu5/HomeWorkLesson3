@@ -1,4 +1,4 @@
-public interface IWarrior
+public interface IWarrior : IEnemy
 {
     public abstract void Attack();
 }
