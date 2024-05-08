@@ -64,6 +64,7 @@ namespace Assets.Visitor
                 
                 EnemyType randomType = (EnemyType)UnityEngine.Random.Range(0, Enum.GetValues(typeof(EnemyType)).Length);
                 Enemy enemy = _enemyFactory.Get(randomType);
+                _currentWeight += _weightMap[randomType];
                 enemy.MoveTo(_spawnPoints[UnityEngine.Random.Range(0, _spawnPoints.Count)].position);
                 enemy.Died += OnEnemyDied;
                 _spawnedEnemies.Add(enemy);
