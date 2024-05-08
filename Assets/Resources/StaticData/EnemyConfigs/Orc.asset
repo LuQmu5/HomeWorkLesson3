@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d05da8cce6330804096e30cd9d52b92c, type: 3}
+  m_Name: Orc
+  m_EditorClassIdentifier: 
+  _magePrefab: {fileID: 7145593129127837028, guid: 5d38d057fd8aa7c4a90fdbee63a46f3e,
+    type: 3}
+  _warriorPrefab: {fileID: 9051134540073070446, guid: a4f41d9f2efec904f855213920ade6a4,
+    type: 3}
