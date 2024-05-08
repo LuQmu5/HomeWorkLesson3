@@ -5,6 +5,10 @@ namespace Assets.Visitor
 {
     public abstract class Enemy: MonoBehaviour
     {
+        [SerializeField] private EnemyType _type;
+
+        public EnemyType Type => _type;
+        
         public event Action<Enemy> Died;
 
         //Какая то общая логика врага: передвижение, жизни и тп.
