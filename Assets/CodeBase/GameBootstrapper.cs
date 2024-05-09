@@ -8,9 +8,9 @@ public class GameBootstrapper : MonoBehaviour
     {
         StatsProvider baseStats = new StatsProvider(10, 10, 10);
         RaceStatsProvider raceStats = new RaceStatsProvider(baseStats, Races.Human);
-        SpecStatsProvider specStats = new SpecStatsProvider(raceStats, Specs.Rogue);
-        PassiveAbilityStatsProvider passiveAbilityStatsProvider = new PassiveAbilityStatsProvider(specStats, agilityPassiveBonus: 3);
+        PassiveAbilityStatsProvider passiveAbilityStatsProvider = new PassiveAbilityStatsProvider(raceStats, agilityPassiveBonus: 3);
+        SpecStatsProvider specStats = new SpecStatsProvider(passiveAbilityStatsProvider, Specs.Rogue);
 
-        _character.Init(new CharacterStats(passiveAbilityStatsProvider));
+        _character.Init(new CharacterStats(specStats));
     }
 }
