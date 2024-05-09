@@ -1,18 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class StatsProvider : MonoBehaviour
+﻿public class StatsProvider : IStatsProvider
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private int _strength;
+    private int _agility;
+    private int _intelligence;
 
-    // Update is called once per frame
-    void Update()
+    public int Strength => _strength;
+    public int Agility => _agility;
+    public int Intelligence => _intelligence;
+
+    public StatsProvider(int strength, int agility, int intelligence)
     {
-        
+        _strength = strength;
+        _agility = agility;
+        _intelligence = intelligence;
     }
 }
